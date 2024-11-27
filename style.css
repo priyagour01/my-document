@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.hero{
+    height: 100vh;
+    background: url(/bg1.webp)no-repeat center center/cover;
+}
+
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 20px;
+    position:sticky;
+    width: 100%;
+    top: 15px;
+    
+}
+
+.hero nav ul{
+    display: flex;
+     gap: 10px;
+
+}
+.bar{
+    display: flex;
+    gap: 40px;
+}
+.bar h4 a{
+    text-decoration: none;
+}
+.hero nav ul li a{
+    text-decoration: none;
+}
+.hero nav ul li{
+    list-style: none;
+}
+.hero h2{
+    color: white;
+    position: relative;
+    top: 50px;
+   margin-left: 30px;
+    font-size: 60px;
+}
+ .hero .mybtn{
+    border: 1px solid black;
+    background-color: #b1a05b;
+    margin-left:45%;
+    position: relative;
+    top: 310px;
+    left: 500px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+  
+.para{
+    height: 80vh;
+}
+.para div p{
+    color: black;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 40px;
+}
+.card{
+      padding-top: 8%;
+     padding-left: 8%;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+        
+  
+}
+.third{
+      height: 100vh;
+      background-color: #FFF7D8;  
+       
+}
+.card img{
+  min-width: 400px;
+}
+.card .image2{
+    height: 260px;
+}
+
+.card h1{
+    text-align: start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card p{
+    font-size: 18px;
+}
+.third .heading{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 50px;
+}
+
+.fourth{
+    height: 100vh;
+    background: url(/c837a6_6d76103ea529451fbe00ee270c1f59ea~mv2.webp)no-repeat center center/cover;
+}
+
+.fifth{
+    height: 100vh;
+    background-color: aliceblue;
+
+}
+
+.fifth h1 {
+    justify-content: center;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 30px;
+    padding-bottom: 40px;
+
+
+}
+
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 90px;
+}
+
+.btn{
+    border: 1px solid black;
+    background-color: #b1a05b;
+    margin-left:45%;
+    margin-top: 20px;
+    padding: 10px;;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.fifth .btn:hover{
+    background-color: rgb(93, 214, 93);
+}
+
+.mypara {
+    height: 80vh;
+    background-color: cadetblue;
+}
+
+.mypara h1 {
+    color: black;
+    text-align: start;
+    padding-top: 5%;
+    font-size: 30px;
+    margin-left: 90px;
+
+}
+
+.mypara h3 {
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.mypara h2{
+    margin-left: 50px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.mypara h3 {
+    margin-left: 50px;
+    padding-top: 70px;
+    font-size: 20px;
+}
+
+.text  {
+    display: flex;
+    position: relative;
+    left: 800px;
+    bottom:300px;
+    font-size: 20px;
+}
+
+.mytext {
+    position: relative;
+    bottom: 200px;
+    left: 700px;
+    padding: 40px;
+    
+}
+.mytext input{
+    height: 30px;
+}
+.mytext button{
+    height: 30px;
+}
+#click{
+    display: none;
+}
+label{
+    font-size: 25px;
+    color: purple;
+}
+
+@media screen and (max-width:768px){
+    .bar {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero .mybtn {
+        left: 0px;
+    }
+    .box{
+        grid-template-columns: 1fr 1fr;
+    }
+    .fifth{
+        height: auto;
+        padding: 20px;
+    }
+    .text{
+        position: static;
+    }
+    .mytext{
+        position: static;
+    }
+    .mypara{
+        height: auto;
+    }
+    .card{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .third{
+        height: auto;
+    }
+    .bar h4{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:426px){
+    .bar {
+
+    grid-template-columns: 1fr;
+    }
+    .box{
+        grid-template-columns: 1fr;
+    }
+    .third .heading{
+        position: static;
+    }
+    .hero h2{
+        top: 200px;
+    }
+    .hero .mybtn{
+        top: 200px;
+        left: 100px;
+    }
+
+    .card img {
+        width: 300px;
+    }
+}
